@@ -10,8 +10,11 @@ buttonA.addEventListener("click", () => {
   if (inputA.value.trim() == "") {
   } else {
     const reply = document.createElement("div");
-    reply.innerText = inputA.value;
+    const text = document.createElement("div");
+    text.innerText = inputA.value;
     messageA.appendChild(reply);
+    reply.appendChild(text);
+    text.classList.add("text");
     reply.classList.add("message");
     inputA.value = "";
     const removeA = document.createElement("button");
@@ -28,8 +31,11 @@ buttonB.addEventListener("click", () => {
   if (inputB.value.trim() == "") {
   } else {
     const reply = document.createElement("div");
-    reply.innerText = inputB.value;
+    const text = document.createElement("div");
+    text.innerText = inputB.value;
     messageB.appendChild(reply);
+    reply.appendChild(text);
+    text.classList.add("text");
     reply.classList.add("message");
     inputB.value = "";
     const removeB = document.createElement("button");
