@@ -116,7 +116,7 @@ button:hover {
   border-radius: 15px;
   padding: 10px;
   max-width: 300px;
-  min-height: 40px;
+  min-height: fit-content;
   width: fit-content;
   flex-wrap: nowrap; /* Prevents the button from wrapping */
 }
@@ -137,4 +137,18 @@ button:hover {
   width: 20px;
   height: 20px;
   font-size: 5px;
+}
+@media screen and (max-width: 480px) {
+  .chat {
+    height: 70%;
+  }
+
+  .message {
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  .text {
+    max-width: 100%;
+  }
 }
