@@ -109,7 +109,7 @@ button:hover {
 }
 .message {
   display: flex;
-  align-items: flex-start; /* Aligns items at the top */
+  align-items: flex-start;
   gap: 10px;
   color: white;
   background: #727272;
@@ -118,15 +118,15 @@ button:hover {
   max-width: 300px;
   min-height: fit-content;
   width: fit-content;
-  flex-wrap: nowrap; /* Prevents the button from wrapping */
+  flex-wrap: nowrap; 
 }
 
 .text {
-  flex: 1; /* Allows the text div to take up available space */
+  flex: 1;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  min-width: 0; /* Prevents flexbox from breaking text wrapping */
+  min-width: 0; 
 }
 .removeA {
   width: 20px;
