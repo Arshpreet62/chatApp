@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.app {
+  max-width: 1200px;
+}
+.header {
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header > svg {
+  height: 30px;
+  width: 30px;
+  stroke: gray;
+}
+.header > img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.chat {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  min-height: 400px;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  gap: 10px;
+}
+.userA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+.userB {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+}
+input {
+  height: 50px;
+  width: 100%;
+}
+button {
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: rgb(13, 182, 13);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+button:hover {
+  background-color: rgb(35, 235, 21);
+}
+.messageA {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.messageB {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.message {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  background: #727272;
+  border-radius: 15px;
+  padding: 10px;
+  max-width: 200px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.removeA {
+  width: 20px;
+  height: 20px;
+  font-size: 5px;
+}
+.removeB {
+  width: 20px;
+  height: 20px;
+  font-size: 5px;
+}
