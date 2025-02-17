@@ -1,29 +1,27 @@
 const inputA = document.querySelector(".inputA");
 const buttonA = document.querySelector(".buttonA");
-const messageA = document.querySelector(".messageA");
 const inputB = document.querySelector(".inputB");
 const buttonB = document.querySelector(".buttonB");
-const messageB = document.querySelector(".messageB");
-const removeA = document.querySelector(".removeA");
-const removeB = document.querySelector(".removeB");
+const chat = document.querySelector(".chat");
+
 buttonA.addEventListener("click", () => {
   if (inputA.value.trim() == "") {
   } else {
     const reply = document.createElement("div");
     const text = document.createElement("div");
     text.innerText = inputA.value;
-    messageA.appendChild(reply);
+    chat.appendChild(reply);
     reply.appendChild(text);
     text.classList.add("text");
-    reply.classList.add("message");
+    reply.classList = "A";
     inputA.value = "";
-    const removeA = document.createElement("button");
-    removeA.innerText = "X";
-    reply.appendChild(removeA);
-    removeA.classList.add("removeA");
-    removeA.addEventListener("click", (event) => {
+    const remove = document.createElement("button");
+    remove.innerText = "X";
+    reply.appendChild(remove);
+
+    remove.addEventListener("click", (event) => {
       const parent = event.target.parentElement;
-      messageA.removeChild(parent);
+      chat.removeChild(parent);
     });
   }
 });
@@ -33,18 +31,18 @@ buttonB.addEventListener("click", () => {
     const reply = document.createElement("div");
     const text = document.createElement("div");
     text.innerText = inputB.value;
-    messageB.appendChild(reply);
+    chat.appendChild(reply);
     reply.appendChild(text);
     text.classList.add("text");
-    reply.classList.add("message");
+    reply.classList = "B";
     inputB.value = "";
-    const removeB = document.createElement("button");
-    removeB.innerText = "X";
-    reply.appendChild(removeB);
-    removeB.classList.add("removeB");
-    removeB.addEventListener("click", (event) => {
+    const remove = document.createElement("button");
+    remove.innerText = "X";
+    reply.appendChild(remove);
+
+    remove.addEventListener("click", (event) => {
       const parent = event.target.parentElement;
-      messageB.removeChild(parent);
+      chat.removeChild(parent);
     });
   }
 });

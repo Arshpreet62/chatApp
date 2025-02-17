@@ -7,6 +7,10 @@
 html,
 body {
   height: 100%;
+  width: 100%;
+}
+body {
+  background: linear-gradient(to right, rgb(41, 41, 41), rgb(57, 57, 57));
 }
 .app {
   margin: 0 auto;
@@ -39,16 +43,14 @@ main {
 }
 .chat {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(rgb(255, 255, 255), rgb(171, 173, 171));
   min-height: 400px;
   height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 .inputs {
   display: flex;
@@ -81,44 +83,45 @@ button {
   height: 30px;
   width: 100px;
   border-radius: 10px;
-  background-color: rgb(13, 182, 13);
+  background: linear-gradient(to right, rgb(160, 113, 226), rgb(201, 138, 221));
   color: white;
   font-size: 0.9rem;
   font-weight: 700;
 }
 button:hover {
-  background-color: rgb(35, 235, 21);
+  box-shadow: 5px 5px 10px rgba(110, 220, 175, 0.5);
+  background: linear-gradient(to right, rgb(110, 220, 175), rgb(140, 240, 165));
 }
-.messageA {
-  padding: 10px;
+
+.A {
   display: flex;
-  align-items: st;
-  flex-direction: column;
-  gap: 30px;
-  overflow: scroll;
-  width: 45%;
-}
-.messageB {
-  padding: 10px;
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-  gap: 30px;
-  overflow: scroll;
-  width: 45%;
-}
-.message {
-  display: flex;
-  align-items: flex-start; /* Aligns items at the top */
+  width: fit-content;
+  max-width: 200px;
   gap: 10px;
   color: white;
   background: #727272;
   border-radius: 15px;
   padding: 10px;
-  max-width: 300px;
-  min-height: fit-content;
+  align-self: flex-start;
+  flex-wrap: nowrap;
+}
+.B {
+  display: flex;
   width: fit-content;
-  flex-wrap: nowrap; /* Prevents the button from wrapping */
+  max-width: 200px;
+  gap: 10px;
+  color: white;
+  background: #727272;
+  border-radius: 15px;
+  padding: 10px;
+  align-self: flex-end;
+  flex-wrap: nowrap;
+}
+.A > button {
+  width: 40px;
+}
+.B > button {
+  width: 40px;
 }
 
 .text {
@@ -139,13 +142,8 @@ button:hover {
   font-size: 5px;
 }
 @media screen and (max-width: 480px) {
-  .chat{
-    height:70%;
-  }
   .message {
     flex-wrap: wrap;
-    max-width: 100%;
-    width: fit-content;
   }
 
   .text {
