@@ -9,6 +9,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 body {
   background: linear-gradient(to right, rgb(41, 41, 41), rgb(57, 57, 57));
 }
@@ -142,6 +143,10 @@ button:hover {
   font-size: 5px;
 }
 @media screen and (max-width: 480px) {
+  .chat{
+    height:70%;
+  }
+  
   .message {
     flex-wrap: wrap;
   }
