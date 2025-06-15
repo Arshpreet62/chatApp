@@ -1,53 +1,30 @@
-📢 Chat App
+# Self‑Chat App
 
-A simple chat application built using HTML, CSS, and JavaScript for learning and understanding front-end development.
+A simple, responsive self‑chat UI built with **React** and **Tailwind CSS**, designed to practice grid layout, text wrapping, and interactive buttons.
 
-🚀 Features
+## 🔗 Live Demo  
+https://arshpreet62.github.io/chatApp/
 
-🔹 Basic chat interface
+## 🎯 Purpose & Goals
 
-🔹 Local message storage (no backend or database)
+- 📐 Learn **CSS Grid** layout for chat bubble positioning  
+- 🧵 Handle **text wrapping** for long messages  
+- ✉️ Implement a **Send** button to post messages  
+- 🖥️ Ensure **responsive design** for desktop and mobile
 
-🔹 Responsive design
+## 🧱 Tech Stack
 
-🔹 Simple UI for practice
+- React (functional components & state/hooks)  
+- Tailwind CSS for styling & responsive layouts  
+- (Optional) CRA or Vite as the build toolchain
 
-🛠️ Technologies Used
+## 🧩 Features
 
-Frontend: HTML, CSS, JavaScript (Vanilla JS)
+- Self-chat conversation—type and submit your messages  
+- Chat bubbles arranged via grid with consistent spacing  
+- Automatic wrapping for long message lines  
+- Styled **Send** button with hover and focus effects  
+- Responsive across screen sizes
 
-📥 Installation
-
-Clone the repository:
-
-git clone https://github.com/Arshpreet62/chat-app.git
-cd chat-app
-
-Open the project in a browser:
-
-Simply open index.html in your browser.
-
-🌍 Deployment
-
-You can deploy the app using GitHub Pages or any static hosting service.
-
-📸 Screenshots
-
-Add screenshots of your app here
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to fork this repository and submit pull requests.
-
-📝 License
-
-This project is licensed under the MIT License.
-
-📬 Contact
-
-GitHub: Arshpreet62
-
-Email: arshpreet6462@example.com
-
-Made with ❤️ by Arshpreet62.
+## 🗂 Project Structure
 
